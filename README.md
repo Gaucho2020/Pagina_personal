@@ -32,10 +32,8 @@ Se presenta Python como el lenguaje de entrada al mundo de la programación, dif
 * Ejecución condicional
 * Repetición
 
-# Variables, Valores y Operadores
+# Variables y Valores
 Esta sección es crucial para entender cómo la información se almacena y se manipula:
-
-## Variables y Valores
 
 Una variable es un nombre para referenciar un valor almacenado en la memoria.
 
