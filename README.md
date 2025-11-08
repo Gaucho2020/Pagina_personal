@@ -26,11 +26,11 @@ Componentes físicos de un sistema informático (mencionado como una sección en
 
 Se presenta Python como el lenguaje de entrada al mundo de la programación, diferenciándolo de los lenguajes naturales. Los lenguajes de programación se componen de cinco elementos básicos para expresar computaciones:
 
-Entrada
-Salida
-Matemáticas
-Ejecución condicional
-Repetición
+* Entrada
+* Salida
+* Matemáticas
+* Ejecución condicional
+* Repetición
 
 # Variables, Valores y Operadores
 Esta sección es crucial para entender cómo la información se almacena y se manipula:
@@ -63,6 +63,7 @@ and, or, not.
 ## Ejemplo de código Python
 
 # 1. Entrada de datos y Asignación de Variables
+```Python
 # Usamos input() para pedir datos y int() para asegurar que sean números enteros.
 
 print("Ingresa dos números para realizar operaciones.")
@@ -70,9 +71,9 @@ print("Ingresa dos números para realizar operaciones.")
 # 'num1' y 'num2' son variables que almacenan valores de tipo entero (int)
 num1 = int(input("Primer número: "))
 num2 = int(input("Segundo número: "))
-
+```
 # 2. Operadores Aritméticos
-
+```
 # La variable 'suma' usa el operador de suma (+)
 suma = num1 + num2
 
@@ -82,9 +83,9 @@ multiplicacion = num1 * num2
 # La variable 'division_entera' usa el operador de división entera (//),
 # que descarta la parte decimal del resultado.
 division_entera = num1 // num2
-
+```
 # 3. Salida de resultados (Uso de print())
-
+```
 print("\n--- Resultados de las Operaciones ---")
 
 # Se usa f-strings (cadenas formateadas) para combinar texto y variables.
@@ -96,7 +97,7 @@ print(f"Multiplicación: {num1} * {num2} = **{multiplicacion}**")
 print(f"División Entera: {num1} // {num2} = **{division_entera}**")
 
 print("-------------------------------------")
-
+```
 # Conceptos Aplicados
 Variables y Valores: Se crean las variables num1, num2, suma, multiplicacion y division_entera para guardar datos y resultados.
 
@@ -105,3 +106,5 @@ Entrada/Salida: Se usa input() para obtener datos del usuario y print() para mos
 Operadores: Se utilizan los operadores +, *, y // (división entera).
 
 # Reflexión personal
+
+He podido obtener muchos conceptos útiles en el proceso del desarrollo, además de conocer tanto la plataforma Github como algunas funciones básicas del lenguaje de progrmaación Python y eso es gratificante teniendo en cuenta los objetivos trazados al iniciar este curso. 
