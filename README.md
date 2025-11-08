@@ -60,9 +60,9 @@ and, or, not.
 # Lenguaje Python
 <img width="920" height="920" alt="image" src="https://github.com/user-attachments/assets/9847de6a-f298-4bf8-991e-1673a0f22ad7" />
 
-## Ejemplo de código Python
+# Ejemplo de código Python
 
-# 1. Entrada de datos y Asignación de Variables
+**1. Entrada de datos y Asignación de Variables**
 ```Python
 # Usamos input() para pedir datos y int() para asegurar que sean números enteros.
 
@@ -72,7 +72,7 @@ print("Ingresa dos números para realizar operaciones.")
 num1 = int(input("Primer número: "))
 num2 = int(input("Segundo número: "))
 ```
-# 2. Operadores Aritméticos
+**2. Operadores Aritméticos**
 ```
 # La variable 'suma' usa el operador de suma (+)
 suma = num1 + num2
@@ -84,7 +84,7 @@ multiplicacion = num1 * num2
 # que descarta la parte decimal del resultado.
 division_entera = num1 // num2
 ```
-# 3. Salida de resultados (Uso de print())
+**3. Salida de resultados (Uso de print())**
 ```
 print("\n--- Resultados de las Operaciones ---")
 
@@ -99,12 +99,21 @@ print(f"División Entera: {num1} // {num2} = **{division_entera}**")
 print("-------------------------------------")
 ```
 # Conceptos Aplicados
-Variables y Valores: Se crean las variables num1, num2, suma, multiplicacion y division_entera para guardar datos y resultados.
+**Variables y Valores:** Se crean las variables num1, num2, suma, multiplicacion y division_entera para guardar datos y resultados.
 
-Entrada/Salida: Se usa input() para obtener datos del usuario y print() para mostrarlos.
+**Entrada/Salida:** Se usa input() para obtener datos del usuario y print() para mostrarlos.
 
-Operadores: Se utilizan los operadores +, *, y // (división entera).
+**Operadores:** Se utilizan los operadores +, *, y // (división entera).
 
 # Reflexión personal
 
-He podido obtener muchos conceptos útiles en el proceso del desarrollo, además de conocer tanto la plataforma Github como algunas funciones básicas del lenguaje de progrmaación Python y eso es gratificante teniendo en cuenta los objetivos trazados al iniciar este curso. 
+He podido obtener muchos conceptos útiles en el proceso del desarrollo, además de conocer tanto la plataforma **Github** como algunas funciones básicas del lenguaje de programación **Python** y eso es gratificante teniendo en cuenta los objetivos trazados al iniciar este curso. 
+
+### Referencias de IA
+
+**Fuente del Material:** [Unidad 1 - Pensamiento Algorítmico](https://introsoft-iud.github.io/pensamiento_algoritmico_repo/unidades/unidad1/) por Introsoft-IUD.
+
+---
+* **Resúmenes y Estructura:** Generados con la asistencia de un modelo de lenguaje de IA para estructurar y resumir los temas principales de la Unidad 1.
+* **Ejemplos de Código:** Los ejemplos simples de Python (Aritmética y Cadenas) fueron desarrollados con la asistencia de IA para ilustrar los conceptos de la unidad.
+---
