@@ -41,10 +41,10 @@ Una variable es un nombre para referenciar un valor almacenado en la memoria.
 
 Un valor es una unidad de información con un tipo de dato específico, como:
 
-Números enteros (int).
-Números decimales (float).
-Cadenas de texto (str).
-Valores lógicos (bool).
+* Números enteros (int).
+* Números decimales (float).
+* Cadenas de texto (str).
+* Valores lógicos (bool).
 
 # Operadores
 
@@ -59,5 +59,49 @@ and, or, not.
 
 # Lenguaje Python
 <img width="920" height="920" alt="image" src="https://github.com/user-attachments/assets/9847de6a-f298-4bf8-991e-1673a0f22ad7" />
+
 ## Ejemplo de código Python
 
+# 1. Entrada de datos y Asignación de Variables
+# Usamos input() para pedir datos y int() para asegurar que sean números enteros.
+
+print("Ingresa dos números para realizar operaciones.")
+
+# 'num1' y 'num2' son variables que almacenan valores de tipo entero (int)
+num1 = int(input("Primer número: "))
+num2 = int(input("Segundo número: "))
+
+# 2. Operadores Aritméticos
+
+# La variable 'suma' usa el operador de suma (+)
+suma = num1 + num2
+
+# La variable 'multiplicacion' usa el operador de multiplicación (*)
+multiplicacion = num1 * num2
+
+# La variable 'division_entera' usa el operador de división entera (//),
+# que descarta la parte decimal del resultado.
+division_entera = num1 // num2
+
+# 3. Salida de resultados (Uso de print())
+
+print("\n--- Resultados de las Operaciones ---")
+
+# Se usa f-strings (cadenas formateadas) para combinar texto y variables.
+print(f"El primer número es: {num1}")
+print(f"El segundo número es: {num2}")
+
+print(f"\nSuma: {num1} + {num2} = **{suma}**")
+print(f"Multiplicación: {num1} * {num2} = **{multiplicacion}**")
+print(f"División Entera: {num1} // {num2} = **{division_entera}**")
+
+print("-------------------------------------")
+
+# Conceptos Aplicados
+Variables y Valores: Se crean las variables num1, num2, suma, multiplicacion y division_entera para guardar datos y resultados.
+
+Entrada/Salida: Se usa input() para obtener datos del usuario y print() para mostrarlos.
+
+Operadores: Se utilizan los operadores +, *, y // (división entera).
+
+# Reflexión personal
