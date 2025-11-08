@@ -1,5 +1,5 @@
 # Pagina-personal
-# ¡Hola a todos! Soy [Jhon Torres] 👋
+# ¡Hola a todos! Soy Jhon Torres 👋
 
 Soy **Estudiante de Desarrollo de Software** con una gran curiosidad por cómo funcionan las aplicaciones y, más importante, cómo hacerlas **seguras**. Mi pasión se centra en construir soluciones funcionales mientras incorporo las mejores prácticas de **ciberseguridad**.
 
