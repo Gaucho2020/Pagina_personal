@@ -109,7 +109,7 @@ print("-------------------------------------")
 
 He podido obtener muchos conceptos útiles en el proceso del desarrollo, además de conocer tanto la plataforma **Github** como algunas funciones básicas del lenguaje de programación **Python** y eso es gratificante teniendo en cuenta los objetivos trazados al iniciar este curso. 
 
-### Referencias de IA
+# Referencias de IA
 
 **Fuente del Material:** [Unidad 1 - Pensamiento Algorítmico](https://introsoft-iud.github.io/pensamiento_algoritmico_repo/unidades/unidad1/) por Introsoft-IUD.
 
