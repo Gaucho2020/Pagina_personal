@@ -2,7 +2,7 @@
 
 # Aprendiendo a programar como una tortuga 🐢
 
-<img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/67639cc5-8a39-4c77-b2a1-b4ac6c2cd217" />
+<img width="232" height="217" alt="image" src="https://github.com/user-attachments/assets/4ea75be7-c36a-4259-8685-fbdb73d39545" />
 
 ## Ejemplo base para iniciar
 ### Código Import Turtle
@@ -77,6 +77,61 @@ Creando una tortuga simulada que da 5 pasos hacia abajo
      |
      ↓
 ```
+## Reto 3: Girar y dibujar usando solo print() e input()
+
+Ahora la tortuga no solo avanza: también gira.
+
+Salida (versión gráfica): se dibuja una “L”.
+
+```
+# Entrada
+
+import turtle
+t = turtle.Turtle()
+t.right(90)          # Gira 90 grados a la derecha
+t.forward(40 * 5)
+t.left(90)          # Gira 90 grados a la derecha
+t.forward(40 * 5)
+turtle.done()
+
+```
+```
+# Salida: Dibuja una "L".
+<img width="647" height="496" alt="image" src="https://github.com/user-attachments/assets/446a706d-f6fe-424b-8f86-0101afe378df" />
+```
+
+## Dibujando un cuadrado con una diagonal entre vertices
+
+```Python
+
+# Entrada
+import turtle
+t = turtle.Turtle()
+t.forward(40 * 5)
+t.right(90)          # Gira 90 grados a la derecha
+t.forward(40 * 5)
+t.right(90)          # Gira 90 grados a la derecha
+t.forward(40 * 5)
+t.right(90)          # Gira 90 grados a la derecha
+t.forward(40 * 5)
+t.right(135)         # Gira 135 grados a la derecha
+t.forward(57 * 5)
+turtle.done()
+
+```
+
+```
+# Salida 
+<img width="604" height="505" alt="image" src="https://github.com/user-attachments/assets/3b4c87f2-a393-458e-97f8-0cc2c8815ce1" />
+
+```
+
+## Reto 4: Encapsula los comportamientos anteriores usando funciones
+
+
+
+
+
 
 
 
