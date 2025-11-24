@@ -2,7 +2,8 @@
 
 # Aprendiendo a programar como una tortuga 🐢
 
-<img width="232" height="217" alt="image" src="https://github.com/user-attachments/assets/4ea75be7-c36a-4259-8685-fbdb73d39545" />
+<img width="630" height="630" alt="image" src="https://github.com/user-attachments/assets/4f73fecd-7bce-444c-8c16-31b729c775d7" />
+
 
 ## Ejemplo base para iniciar
 ### Código Import Turtle
@@ -217,7 +218,13 @@ y 2 pasos hacia abajo en una escalera de 3 niveles
 ```
 ## Referencias de IA
 
+- Gemini: Conversación para indicaciones de como generar nuevo archivo en el repositorio. https://gemini.google.com/app/42f2e5a182bcd775?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all
+- Gemini: Conversación para obtener orientación en ejercicio 1 y uso de VS Code para estructuración de código. https://gemini.google.com/app/47a9e6d79158136a?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all
+- Copilot: Conversación en versión de escritorio para orientación en ejercicio 3. https://copilot.microsoft.com/shares/JYbgDpHJbFShg9ExzhApB
 
+## Referencias 
+- Github. (s.f.). Documentación de Github. https://docs.github.com/es/enterprise-cloud@latest/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+  
 
 
 
