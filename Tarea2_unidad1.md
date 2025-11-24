@@ -46,6 +46,8 @@ turtle.done()         # Mantiene la ventana abierta
 Creando una tortuga simulada que da 50 pasos
 
 ```
+El código solicita al usuario cuantos pasos desea dar (entrada) y devuelve impresos los pasos y leyenda con la cantidad de pasos dados.
+
 ## Reto 2: Tortuga bajando
 
 Crea el rastro de una tortuga moviéndose hacia abajo usando únicamente print() e input().
@@ -78,6 +80,8 @@ Creando una tortuga simulada que da 5 pasos hacia abajo
      |
      ↓
 ```
+Este código recibe del usuario cuantos pasos desea avanzar hacia abajo y devuelve impresos los pasos y leyenda con la información registrada.
+
 ## Reto 3: Girar y dibujar usando solo print() e input()
 
 Ahora la tortuga no solo avanza: también gira.
@@ -94,12 +98,12 @@ t.forward(40 * 5)
 t.left(90)          # Gira 90 grados a la derecha
 t.forward(40 * 5)
 turtle.done()
-
 ```
 
 # Salida: Dibuja una "L".
 <img width="647" height="496" alt="image" src="https://github.com/user-attachments/assets/446a706d-f6fe-424b-8f86-0101afe378df" />
 
+El código realiza versión gráfica usando librería de Turtle para devolver una imágen en form de "L"
 
 ## Dibujando un cuadrado con una diagonal entre vertices
 
@@ -118,11 +122,12 @@ t.forward(40 * 5)
 t.right(135)         # Gira 135 grados a la derecha
 t.forward(57 * 5)
 turtle.done()
-
 ```
 
 # Salida 
 <img width="604" height="505" alt="image" src="https://github.com/user-attachments/assets/3b4c87f2-a393-458e-97f8-0cc2c8815ce1" />
+
+El código realiza versión gráfica usando librería de Turtle para devolver una imágen en form de cuadrado con línea diagonal entre dos vertices.
 
 ## Reto 4: Encapsula los comportamientos anteriores usando funciones
 
@@ -134,7 +139,6 @@ Reescribe los retos anteriores creando funciones que representen los movimientos
 # Entrada
 
 import turtle
-
 t = turtle.Turtle()   # Crea una tortuga
 pasos = int(input("¿Cuántos pasos quieres dar hacia adelante?: "))
 bajar = int(input("¿Cuántas líneas hacia abajo quieres?: "))
@@ -171,6 +175,7 @@ y también 10 pasos hacia abajo
            ↓
 ```
 En este caso los movimientos son realizados de acuerdo a la información introducida por el usuario.
+El código usa librería Turtle, comandos input(), printr() y ciclo For para repetir los pasos hacia abajo.
 
 ## Reto 5: La tortuga baja las escalas
 
@@ -216,6 +221,8 @@ Creando una tortuga simulada que da 5 pasos adelante
 y 2 pasos hacia abajo en una escalera de 3 niveles
 
 ```
+Este código es una variación del anterior usando los comandos y ciclo para lograr la escalera en tres niveles.
+
 ## Referencias de IA
 
 - Gemini: Conversación para indicaciones de como generar nuevo archivo en el repositorio. https://gemini.google.com/app/42f2e5a182bcd775?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all
