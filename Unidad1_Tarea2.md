@@ -91,35 +91,41 @@ Reescribe los retos anteriores creando funciones que representen los movimientos
 
 ```
 # Entrada
+# Punto de inicio de variable global
+alineación = 0
+
 # Definición de funciones
-ancho = (5)
-alto = (2)
-def movimiento_adelante(ancho):    # Función de movimiento adelante
-    print("Creando una tortuga simulada que da", ancho, "pasos hacia adelante y", alto, "pasos hacia abajo")
+def adelante(ancho):    # Función de movimiento adelante
+    global alineación   # Actualización de posición adelante
     print(" —" * (ancho) + "┐")
-def movimiento_abajo(alto):        # Función de movimiento abajo
+    alineación = ancho * 2
+
+def abajo(alto):        # Función de movimiento abajo
+    global alineación   # Lectura de posición para ir abajo
     Caracter = ("|")
-    print(((" " * (ancho * 2) ) + f"{Caracter}\n") * (alto) + ("  " * (ancho) + "V"))
+    print((" " * alineación + f"{Caracter}\n") * alto + (" " * alineación + "V"))
 
-def escalon(ancho_adelante, alto_abajo): # Combinación de las dos funciones 
-    movimiento_adelante(ancho_adelante)
-    movimiento_abajo(alto_abajo)
+# LLamada a función 
+adelante(10)
+abajo(7)
 
-escalon(ancho, alto)                      # LLamada a función 
 
 ```
 
 ```
 # Salida
-
-Creando una tortuga simulada que da 5 pasos hacia adelante y 2 pasos hacia abajo
- — — — — —┐
-          |
-          |
-          V
+ — — — — — — — — — —┐
+                    |
+                    |
+                    |
+                    |
+                    |
+                    |
+                    |
+                    V
 
 ```
-Se definieron funciones para los movimientos adelante y abajo con las cuales se produce el resultado definido como un escalón en forma de "L".
+Se definieron funciones para los movimientos adelante y abajo con las cuales se produce el resultado definido como un escalón en forma de "L". Se utilizó una variable global para poder posicionar correctamente el inicio del movimiento abajo.
 
 ## Reto 5: La tortuga baja las escalas
 
@@ -130,23 +136,29 @@ Cada escalón debe conservar la posición horizontal acumulada y dibujar correct
 
 ```
 # Entrada
-ancho = (5)
-alto = (2)
-secciones = (3)
+alineación = 0                  # Variable global iniciada en 0
 
-def cantidad_escalas(ancho, alto, secciones):
-    desplazamiento = 0                                      # Control de indentación para alinear los escalones
+def adelante(ancho):            #Función para ir adelante
+    global alineación
+    print(" " * alineación + "—" * ancho + "┐")
+    alineación += ancho         # Posición actualizada adelante
 
-    for i in range(secciones):        
-        print(" " * desplazamiento + "—" * ancho + "┐")     # Movimiento hacia adelante
-        
-        for j in range(alto):                               # Movimiento hacia abajo
-            print(" " * (desplazamiento + ancho) + "|")
-        print(" " * (desplazamiento + ancho) + "↓")
-        
-        desplazamiento += ancho                             # Incrementar el espacio por línea
+def abajo(alto):                 #Función para ir abajo
+    global alineación
+    for _ in range(alto):
+        print(" " * alineación + "|")
+```
 
-cantidad_escalas(ancho, alto, secciones)
+```
+# LLamada a función 
+adelante(5)
+abajo(3)
+
+adelante(5)
+abajo(3)
+
+adelante(5)
+abajo(3)
 
 ```
 ```
@@ -154,17 +166,17 @@ cantidad_escalas(ancho, alto, secciones)
 —————┐
      |
      |
-     ↓
+     |
      —————┐
           |
           |
-          ↓
+          |
           —————┐
                |
                |
-               ↓
+               |
 ```
-Esta versión permite el movimiento del objeto tortuga en forma escalonada. Para esto usa funciones y ciclos "for i in" para repetir escalones.
+Esta versión permite el movimiento del objeto tortuga en forma escalonada. Para esto usa funciones y ciclos "for i in" para definir espacio entre escalones.
 
 ## Referencias de IA
 
