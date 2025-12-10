@@ -1,8 +1,3 @@
-# E
-
-
-
-
 # Evolución de Mini Turtle 🐢
 
 **Mini Turtle** es un paquete educativo en Python que simula los movimientos de una tortuga en la consola usando texto.  
@@ -20,3 +15,14 @@ Su objetivo es enseñar conceptos básicos de programación como **estado global
 ---
 
 ## 📂 Estructura del proyecto
+
+```
+mini_turtle_task/
+├── mini_turtle/
+│   ├── __init__.py
+│   └── drawer_logic.py
+├── main.py
+├── pyproject.toml
+└── README.md
+```
+
