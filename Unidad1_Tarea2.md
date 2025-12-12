@@ -192,8 +192,7 @@ Esta versión permite el movimiento del objeto tortuga en forma escalonada. Para
 ## Referencias 
 - Github. (s.f.). Documentación de Github. https://docs.github.com/es/enterprise-cloud@latest/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
-# Entradas a Tarea 3 "Tarea Mini-Turtle". https://github.com/Gaucho2020/Primera_pagina/blob/main/Ejercicio_1_Versi%C3%B3n_Funcional_Modularidad.md 
-Ejercicio_1_Versión_Funcional_Modularidad.md
+# Entradas a Tarea 3 "Tarea Mini-Turtle". Ejercicio_1_Versión_Funcional_Modularidad.md. https://github.com/Gaucho2020/Primera_pagina/blob/main/Ejercicio_1_Versi%C3%B3n_Funcional_Modularidad.md 
   
 
 
