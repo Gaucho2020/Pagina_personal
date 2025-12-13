@@ -6,6 +6,10 @@ La evolución de *mini_turtle* refleja el esfuerzo por crear una herramienta de 
 *Mini_turtle* busca pasar de ser un conjunto reducido de funciones a un paquete modular y bien documentado, pensado para enseñar programación de manera intuitiva. Cada versión enfocada en mejorar la experiencia del usuario: desde la organización del código y la facilidad de importación de funciones, incorporando ejemplos prácticos y un diseño más amigable.
 Esta evolución con sus avances técnicos, muestra un compromiso pedagógico y de aprendizaje par transformar la programación en una experiencia creativa, accesible y motivadora para estudiantes y entusiastas.
 
+# Versión Funcional (Modularidad)
+
+El objetivo es transformar las funciones sueltas `adelante()` y `abajo()` en un paquete Python distribuible llamado **mini_turtle**. Esto demostrará la separación entre la lógica  y la interfaz pública.
+
 ## Requerimientos funcionales
 
 ### *Interfaz limpia*
