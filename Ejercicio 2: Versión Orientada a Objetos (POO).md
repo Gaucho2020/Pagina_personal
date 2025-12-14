@@ -16,17 +16,27 @@ Toda la lógica debe estar dentro de una clase.
 * Ahora: `self.alineacion` es un **atributo de instancia**, inicializado en el constructor (`__init__`).
 * Prohibido usar `global`.
 
-### Interfaz de objetos
+### Interfaz de objetos `__init__.py`
 
-Código
+El usuario debe importar la clase `Tortuga` desde la carpeta.
 
+Desde `__init__.py` debemos colocar:
+
+```
+from .turtle_class import Tortuga
+```
+Y el usuario podrá importar desde `main.py` así:
+
+```
+from mini_turtle_oo import Tortuga
+```
 ## 📁 Estructura de archivos
 
 <img width="168" height="181" alt="image" src="https://github.com/user-attachments/assets/0f036db1-820a-4709-b2cf-b3a677b30b9f" />
 
-## 📲 Pasos de implementación
+## 📋 Pasos de implementación
 
-#### Creamos la clase
+### ☑️ 1. Creamos la clase `Tortuga`
 
 * Definimos `class Tortuga`
 * Usamos `__init__` para inicializar `self.alineacion = 0`
@@ -39,7 +49,7 @@ class Tortuga:
                 self.alineacion = 0        # Estado inicial de la tortuga
 ```
 
-#### Métodos de la clase `Tortuga`
+### 🚀 Métodos de la clase `Tortuga`
 
 Convertimos las funciones en **métodos**. Usando `self`
 
@@ -88,6 +98,157 @@ def reinicio(self):                     # Reinicia la posición a 0
 > * Cada método usa el estado interno (`self.alineacion`) en lugar de variables globales.
 > * Esto asegura que cada objeto `Tortuga` tenga su propio recorrido independiente.
 > * La interfaz es intuitiva: `adelante(ancho)`, `abajo(alto)` y `reinicio()` son comandos simples que simulan el movimiento de una tortuga en texto.
+
+### 🎲 2. Interfaz `__init__`
+
+En el paquete `mini_turtle_oo`, el archivo `__init__.py` expone la clase `Tortuga` para que el usuario pueda importarla directamente, sin necesidad de conocer la estructura interna del paquete.
+
+<img width="401" height="116" alt="image" src="https://github.com/user-attachments/assets/9b7c3968-9204-4b68-a2b1-ed9a26fe914d" />
+
+Gracias a `__init__.py`, el usuario puede escribir:
+
+```
+from mini_turtle_oo import Tortuga
+
+t = Tortuga()
+t.adelante(10)
+t.abajo(3)
+```
+
+➡️ El usuario no necesita saber que la clase está en `turtle_class.py`. La interfaz pública del paquete se simplifica
+
+### 🎯 3. Prueba `main.py`
+
+* **Ejemplo 1**
+
+```
+# Importación de clase
+from mini_turtle_oo import Tortuga
+
+# Uso de la clase
+t = Tortuga()
+
+t.adelante(5)
+t.abajo(3)
+
+t.adelante(5)
+t.abajo(3)
+
+t.reinicio()
+
+t.adelante(5)
+t.abajo(3)
+
+t.adelante(5)
+t.abajo(3)
+```
+
+ * La clase `Tortuga ` es importada desde el módulo `mini_turtle_oo`
+ * Se crea una instancia de la clase `Tortuga`
+ * Al ejecutarse el constructor `__init__`, el atributo `alineacion` se inicializa en `0`.
+ * Esto significa que la tortuga empieza en la posición inicial.
+ 
+```
+# Resultado
+ — — — — —┐
+          |
+          |
+          |
+          🐢
+           — — — — —┐
+                    |
+                    |
+                    |
+                    🐢
+ — — — — —┐
+          |
+          |
+          |
+          🐢
+           — — — — —┐
+                    |
+                    |
+                    |
+                    🐢
+ ```
+  
+* **Ejemplo 2**
+*Independencia de objetos*
+Creamos dos objetos `Tortuga` y cada uno mantiene su propia posición.
+Aquí `t1` y `t2` tienen **estados distintos** `alineacion` independiente.
+
+```
+# Importación de clase
+from mini_turtle_oo import Tortuga
+
+# Uso de la clase
+t1 = Tortuga()
+t2 = Tortuga()
+
+t1.adelante(5)
+t1.abajo(3)
+
+t1.adelante(5)
+t1.abajo(3)
+
+t2.adelante(10)
+t2.abajo(5)
+
+t2.adelante(10)
+t2.abajo(5)
+
+```
+
+
+```
+# Resultado
+ — — — — —┐
+          |
+          |
+          |
+          🐢
+           — — — — —┐
+                    |
+                    |
+                    |
+                    🐢
+ — — — — — — — — — —┐
+                    |
+                    |
+                    |
+                    |
+                    |
+                    🐢
+                     — — — — — — — — — —┐
+                                        |
+                                        |
+                                        |
+                                        |
+                                        |
+                                        🐢
+
+```
+## 📄 Documentación de la transformación
+
+|   **Requerimiento**|    **Antes (Código Funcional)**    |    **Depués (Clase `Tortuga`**     |
+|---------------|-----------------|---------------------|
+| Clase Tortuga | No existía | Se crea `turtle_class`  |
+| Encapsulamiento | `alineacion` como variable global | `self.alineacion` como atributo de instancia  |
+| Interfaz de objetos | Funciones sueltas | Métodos dentro de la clase importados con `from_mini_turtle_oo import Tortuga` |
+| Independencia | Una sola posición global compartida | Cada objeto `Tortuga` mantiene su propia posición  |
+
+# Referencias IA
+- Copilot: conversación en versión de escritorio docuemtación de clases. https://copilot.microsoft.com/shares/RDucbCDCSN8K9281BLJSa
+- Copilot: conversación en versión de escritorio tabla comparativa entre el antes y después del proyecto. https://copilot.microsoft.com/shares/Q32un9GK4iD5aWp8aBBy1
+
+# Referencias web
+- Experience league. Como utilizar Markdown para escribir documentación técnica. https://experienceleague.adobe.com/es/docs/contributor/contributor-guide/writing-essentials/markdown
+
+  
+
+
+
+
 
 
 
